@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Caro1 from '../components/Caro1'
 import Caro2 from '../components/Caro2'
 import Navbar from '../components/Navbar'
 import styles from './home.module.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Contact from '../components/Contact'
-import Contact2 from '../components/Contact2'
+import Contact from '../components/Contact';
+import Contact2 from '../components/Contact2';
+import Modal from 'react-modal';
+import Footer from '../components/Footer'
 
 const responsive = {
     desktop: {
@@ -44,7 +46,95 @@ const responsive2 = {
     }
 };
 
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: '1000',
+    },
+};
+
+
 function Home(props) {
+
+    let subtitle;
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#f00';
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
+
+
+
+    const [formData, setFormData] = useState({});
+    const [message, setMessage] = useState("");
+
+    const handleInput = (e) => {
+        const copyFormData = { ...formData };
+        copyFormData[e.target.name] = e.target.value;
+        setFormData(copyFormData);
+    };
+
+
+    const sendData = async (e) => {
+        e.preventDefault();
+        try {
+            console.log(formData);
+
+            if (formData.userName && formData.contact && formData.email && formData.message) {
+                const response = await fetch(
+                    "https://v1.nocodeapi.com/inspacialdesignweb/google_sheets/ejnwOXXMNyjErUud?tabId=review",
+                    {
+                        method: "post",
+                        body: JSON.stringify([
+                            [
+                                formData.userName,
+                                formData.contact,
+                                formData.email,
+                                formData.message,
+                            ],
+                        ]),
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    }
+                );
+
+
+                const json = await response.json();
+                console.log("Success:", JSON.stringify(json));
+                setMessage("Success");
+                closeModal();
+                alert('Submitted successfully. We will react to you soon.')
+            }
+
+            else {
+                alert(`Please fill the form.`);
+            }
+
+        } catch (error) {
+            console.error("Error:", error);
+            setMessage("Error");
+        }
+    };
+
+
+
+
     return (
         <div className={styles.homePage}>
             <Navbar />
@@ -121,13 +211,129 @@ function Home(props) {
 
                 <div className={styles.col1} >
                     <center>
-                        <button className={styles.btn1}>
+                        <button className={styles.btn1} onClick={openModal}>
                             WRITE REVIEWS
                         </button>
                     </center>
                 </div>
 
             </div>
+
+
+            <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Example Modal"
+            >
+
+                <button className={styles.mclose} onClick={closeModal}>X</button>
+                <div className={styles.mhead} >WRITE A REVIEW</div>
+
+
+                <form onSubmit={sendData} id='blur' >
+
+                    <div className={styles.minp}>
+                        <label className={styles.minp1}>
+                            Name
+                        </label>
+                        <input
+                            className={styles.minp2}
+                            type='text'
+                            name='userName'
+                            // value={userData.userName}
+                            // onChange={postUserData}
+                            onChange={handleInput}
+                        >
+                        </input>
+                    </div>
+
+                    <br />
+
+                    <div className={styles.minp}>
+                        <label className={styles.minp3}>
+                            Contact No.:
+                        </label>
+                        <input
+                            className={styles.minp4}
+                            type='number'
+                            name='contact'
+                            // value={userData.contact}
+                            // onChange={postUserData}
+                            onChange={handleInput}
+                        >
+                        </input>
+
+                        <label className={styles.minp5}>
+                            Email id:
+                        </label>
+                        <input
+                            className={styles.minp6}
+                            type='email'
+                            name='email'
+                            // value={userData.email}
+                            // onChange={postUserData}
+                            onChange={handleInput}
+                        >
+                        </input>
+                    </div>
+
+                    <br />
+
+                    {/* <div className={styles.minp}>
+                        <label className={styles.minp1}>
+                            Salutation:
+                        </label>
+                        <input
+                            className={styles.minp2}
+                            type='text'
+                            name='type'
+                            // value={userData.subject}
+                            // onChange={postUserData}
+                            onChange={handleInput}
+                        >
+                        </input>
+                    </div>
+
+                    <br /> */}
+
+                    <div className={styles.minp}>
+                        <label className={styles.minp1}>
+                            Message:
+                        </label>
+                        <textarea
+                            className={styles.minp2}
+                            type='textarea'
+                            placeholder='Type your message'
+                            row='3'
+                            name='message'
+                            // value={userData.message}
+                            // onChange={postUserData}
+                            onChange={handleInput}
+                        >
+                        </textarea>
+                    </div>
+
+                    <br />
+
+                    <center>
+                        <button
+                            name="submit"
+                            placeholder="Submit"
+                            className={styles.subBtn}
+                            type='submit'
+                            value="submit"
+                        // onClick={submitData}
+                        // onClick={openModal}
+                        ><b>Submit</b></button>
+                    </center>
+
+
+
+
+                </form>
+            </Modal>
 
             <br />
 
@@ -291,7 +497,10 @@ function Home(props) {
 
             </div>
             <br />
+            <br />
+            <br />
 
+            <Footer />
 
 
         </div >

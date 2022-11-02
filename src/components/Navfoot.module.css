@@ -43,6 +43,73 @@ nav {
     height: 4.5rem;
 }
 
+.wfoot {
+    display: flex;
+    flex-wrap: wrap;
+    background: #7D7D7D;
+    padding: 2% 5% 2% 5%;
+}
+
+.wfoot1 {
+    width: 50%;
+}
+
+.wfoot2 {
+    width: 40%;
+}
+
+.footIcon {
+    width: 50%;
+    padding: 0 0 0 25%;
+}
+
+.footHead {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    color: #CBCBCB;
+}
+
+.footcon {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.socialLink {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    color: #CBCBCB;
+}
+
+.socialLink2 {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: #CBCBCB;
+}
+
+.footIcon2 {
+    width: auto;
+    height: 2.5rem;
+    padding: 2%;
+}
+
+.footIcon2:hover {
+    cursor: pointer;
+}
+
+.footContact {
+    font-size: 22px;
+    line-height: 24px;
+    color: white;
+}
+
 @media screen and (max-width: 500px) {
     .list {
         flex-direction: column;
@@ -78,6 +145,75 @@ nav {
         padding: 0px 0 0 0px;
         margin: 0 16rem 0 8rem;
         z-index: 99;
+    }
+
+    .wfoot {
+        display: flex;
+        flex-wrap: wrap;
+        background: #7D7D7D;
+        padding: 2% 5% 2% 5%;
+    }
+
+    .wfoot1 {
+        width: 100%;
+        margin: 0 0 10% 0;
+    }
+
+    .wfoot2 {
+        width: 100%;
+        margin: 0 0 0 3%;
+    }
+
+    .footIcon {
+        width: 80%;
+        padding: 0 0 0 8%;
+    }
+
+    .footHead {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: underline;
+        color: #CBCBCB;
+    }
+
+    .footcon {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .socialLink {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: underline;
+        color: #CBCBCB;
+    }
+
+    .socialLink2 {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        /* text-decoration: underline; */
+        color: #CBCBCB;
+    }
+
+    .footIcon2 {
+        width: auto;
+        height: 2.5rem;
+        padding: 2%;
+    }
+
+    .footIcon2:hover {
+        cursor: pointer;
+    }
+
+    .footContact {
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
     }
 
 }
