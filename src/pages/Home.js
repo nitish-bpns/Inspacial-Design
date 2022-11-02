@@ -8,7 +8,8 @@ import "react-multi-carousel/lib/styles.css";
 import Contact from '../components/Contact';
 import Contact2 from '../components/Contact2';
 import Modal from 'react-modal';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import { HashLink } from 'react-router-hash-link';
 
 const responsive = {
     desktop: {
@@ -136,7 +137,7 @@ function Home(props) {
 
 
     return (
-        <div className={styles.homePage}>
+        <div className={styles.homePage} id='home' >
             <Navbar />
 
             <div className={styles.caroDiv}>
@@ -178,7 +179,7 @@ function Home(props) {
                 one place.”
             </div>
 
-            <div className={styles.head1}>
+            <div className={styles.head1} id='projects' >
                 Projects
             </div>
 
@@ -193,21 +194,33 @@ function Home(props) {
 
             <div className={styles.readBtn}>
 
-                <div className={styles.col1} >
-                    <center>
-                        <button className={styles.btn1}>
-                            READ REVIEWS
-                        </button>
-                    </center>
-                </div>
 
                 <div className={styles.col1} >
                     <center>
-                        <button className={styles.btn1}>
-                            CONTACT US
-                        </button>
+                        <HashLink
+                            scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+                            to="/#testi">
+                            <button className={styles.btn1}>
+                                READ REVIEWS
+                            </button>
+                        </HashLink>
                     </center>
                 </div>
+
+
+
+                <div className={styles.col1} >
+                    <center>
+                        <HashLink
+                            scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+                            to="/#contact">
+                            <button className={styles.btn1}>
+                                CONTACT US
+                            </button>
+                        </HashLink>
+                    </center>
+                </div>
+
 
                 <div className={styles.col1} >
                     <center>
@@ -337,7 +350,7 @@ function Home(props) {
 
             <br />
 
-            <div className={styles.head1}>
+            <div className={styles.head1} id='gallery'>
                 Gallery
             </div>
 
@@ -380,7 +393,7 @@ function Home(props) {
             </div>
 
 
-            <div className={styles.states1}>
+            <div className={styles.states1} id='testi'>
 
                 <div className={styles.statesCol}>
                     <center>
@@ -452,7 +465,7 @@ function Home(props) {
             </div>
 
 
-            <div className={styles.aboutSec}>
+            <div className={styles.aboutSec} id='about' >
                 <div className={styles.head1}>
                     About Us
                 </div>
@@ -478,7 +491,7 @@ function Home(props) {
                 Testimonials
             </div> */}
             <br />
-            <div className={styles.head1}>
+            <div className={styles.head1} id='contact'>
                 Contact Us
             </div>
             <br />

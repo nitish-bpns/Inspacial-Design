@@ -12,6 +12,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.2",
+    "react-router-hash-link": "^2.4.3",
     "react-router-scroll-to-top": "^1.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
