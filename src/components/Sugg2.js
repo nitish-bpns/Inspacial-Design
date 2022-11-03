@@ -10,12 +10,14 @@ import "react-multi-carousel/lib/styles.css";
 
 function Sugg2() {
     return (
-        <div>
+        <div className={styles.sugg}>
 
             {ProjectData2.map((item, index) => {
                 return (
 
-                    <Link to={`/projects/${index + 1}`}
+                    <Link
+                        className={styles.suggItem}
+                        to={`/projects/${index + 1}`}
                         state={{
                             itemTitle: item.title,
                             img1: item.img[0],
@@ -47,14 +49,14 @@ function Sugg2() {
 
                         }}
                     >
-                        <center>
 
-                            <div className={styles.suggCard}>{item.title}
-                                <br />
-                                <img className={styles.suggImg} src={item.img[0]} />
-                            </div>
-
-                        </center>
+                        <div className={styles.suggCard}>
+                            <img className={styles.suggImg} src={item.img[0]} />
+                            <br />
+                            <center>
+                                <span className={styles.suggText}> {item.title}</span>
+                            </center>
+                        </div>
 
                     </Link>
                 );

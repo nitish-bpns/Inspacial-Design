@@ -7,6 +7,8 @@ import Caro1 from '../components/Caro1';
 import Caro2 from '../components/Caro2';
 import Sugg1 from '../components/Sugg1';
 import Sugg2 from '../components/Sugg2';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 const responsive = {
@@ -35,117 +37,134 @@ function Project(props) {
 
 
     return (
-        <div>
-            project: {itemTitle}
+        <div className={styles.proj}>
+            <Navbar />
 
-            <Carousel
-                swipeable={false}
-                draggable={false}
-                showDots={false}
-                responsive={responsive}
-                ssr={true}
-                infinite={true}
-                autoPlay={props.deviceType !== "mobile" ? true : false}
-                autoPlaySpeed={1000}
-                keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
-                // deviceType={this.props.deviceType}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-                height='10rem'
-            >
+            <div className={styles.proj2}>
 
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img1} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img2} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img3} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img4} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img5} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img6} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img7} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img8} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img9} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img10} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img11} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img12} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img13} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img14} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img15} />
-                </div>
-                <div className={styles.pimg} >
-                    <img className={styles.img1} src={img16} />
+                <div className={styles.projHead}>
+                    {itemTitle}
                 </div>
 
+                <Carousel
+                    swipeable={false}
+                    draggable={false}
+                    showDots={false}
+                    responsive={responsive}
+                    ssr={true}
+                    infinite={true}
+                    autoPlay={props.deviceType !== "mobile" ? true : false}
+                    autoPlaySpeed={1000}
+                    keyBoardControl={true}
+                    customTransition="all .5"
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    // removeArrowOnDeviceType={["tablet", "mobile"]}
+                    // deviceType={this.props.deviceType}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                    height='10rem'
+                >
 
-            </Carousel >
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img1} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img2} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img3} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img4} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img5} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img6} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img7} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img8} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img9} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img10} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img11} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img12} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img13} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img14} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img15} />
+                    </div>
+                    <div className={styles.pimg} >
+                        <img className={styles.img1} src={img16} />
+                    </div>
 
-            <br />
 
-            <div className={styles.pdetail}>
-                <span className={styles.phead} >
-                    {head}
-                </span>
+                </Carousel >
+
                 <br />
-                <span className={styles.cdate}>
-                    Date of Completion: <b>{cdate}</b>
-                </span>
-                <br />
-                <span className={styles.cdate}>
-                    Locality: <b>{loc}</b>
-                </span>
-                <br />
-                <span className={styles.cdate}>
-                    Area: <b>{area}</b>
-                </span>
-                <br />
-                <span className={styles.cdate}>
-                    Category: <b>{category}</b>
-                </span>
-                <br />
-                <span className={styles.cdate}>
-                    Scope of work: <b>{scope}</b>
-                </span>
 
+                <div className={styles.pdetail}>
+                    <span className={styles.cdate} >
+                        Description: <b>{head}</b>
+                    </span>
+                    <br />
+                    <span className={styles.cdate}>
+                        Date of Completion: <b>{cdate}</b>
+                    </span>
+                    <br />
+                    <span className={styles.cdate}>
+                        Locality: <b>{loc}</b>
+                    </span>
+                    <br />
+                    <span className={styles.cdate}>
+                        Area: <b>{area}</b>
+                    </span>
+                    <br />
+                    <span className={styles.cdate}>
+                        Category: <b>{category}</b>
+                    </span>
+                    <br />
+                    <span className={styles.cdate}>
+                        Scope of work: <b>{scope}</b>
+                    </span>
+
+
+                </div>
 
             </div>
 
 
-            {
-                `${no}` == 1 || `${no}` == 2 || `${no}` == 3 ? <Sugg2 /> : <Sugg1 />
-            }
+            <div className={styles.sugges}>
 
-            console.log('${no}');
+                <div className={styles.suggHead}>
+                    Our Projects
+                </div>
+
+                {
+                    `${no}` == 1 || `${no}` == 2 || `${no}` == 3 ? <Sugg2 /> : <Sugg1 />
+                }
+
+            </div>
+
+            <Footer />
+
         </div>
     )
 };

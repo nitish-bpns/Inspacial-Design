@@ -1,9 +1,83 @@
+.proj {
+    margin: 5% 0% 0 0%;
+}
+
+.proj2 {
+    margin: 0 10% 0 10%;
+}
+
+.projHead {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
 .pimg {
     width: 100%;
+
 }
 
 .img1 {
-    width: 50%;
-    margin: 0 25% 0 25%;
+    width: 65%;
+    margin: 0 17% 0 17%;
+    border: 1px solid black;
+    box-shadow: 0 0 10px grey;
+}
+
+.pdetail {
+    margin: 1% 17% 5% 17%;
+}
+
+.cdate {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.sugges {
+    background-color: rgb(222, 222, 222);
+}
+
+.suggHead {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    .proj {
+        margin: 20% 0% 0 0%;
+    }
+
+    .proj2 {
+        margin: 0 5% 0 5%;
+    }
+
+    .img1 {
+        width: 100%;
+        margin: 0 0% 0 0%;
+        border: 1px solid black;
+        box-shadow: 0 0 10px grey;
+    }
+
+    .projHead {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin: 2% 0 2% 0;
+    }
+
+    .pdetail {
+        margin: 1% 5% 20% 5%;
+    }
+
+    .cdate {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
 
 }
