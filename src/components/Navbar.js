@@ -31,9 +31,13 @@ function Navbar() {
 
         <nav>
             <ul className={styles.list}>
-                <li>
-                    <img className={styles.ilogo} src='./../images/logo.png' />
-                </li>
+                <HashLink
+                    scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+                    to="/">
+                    <li>
+                        <img className={styles.ilogo} src='./../images/logo.png' />
+                    </li>
+                </HashLink>
 
                 {(toggleMenu || screenWidth > 500) && (
                     <>

@@ -29,10 +29,10 @@ function Footer() {
                     <a href='#' target='_blank'>
                         <img className={styles.footIcon2} src='./../images/fb.png' />
                     </a>
-                    <a href='#' target='_blank'>
+                    <a href='https://www.instagram.com/inspacial.design.studio/' target='_blank'>
                         <img className={styles.footIcon2} src='./../images/ig.png' />
                     </a>
-                    <a href='#' target='_blank'>
+                    <a href='https://www.youtube.com/channel/UC6D58QPkBLd83EWyogFoSpw/featured' target='_blank'>
                         <img className={styles.footIcon2} src='./../images/yt.png' />
                     </a>
 
