@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Inspacial-design/static/css/main.2ca4597e.css",
-    "main.js": "/Inspacial-design/static/js/main.2d7cf079.js",
-    "static/js/787.f059a597.chunk.js": "/Inspacial-design/static/js/787.f059a597.chunk.js",
-    "static/media/revicons.eot": "/Inspacial-design/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/Inspacial-design/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/Inspacial-design/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/Inspacial-design/index.html",
-    "main.2ca4597e.css.map": "/Inspacial-design/static/css/main.2ca4597e.css.map",
-    "main.2d7cf079.js.map": "/Inspacial-design/static/js/main.2d7cf079.js.map",
-    "787.f059a597.chunk.js.map": "/Inspacial-design/static/js/787.f059a597.chunk.js.map"
+    "main.css": "./static/css/main.2b2387d0.css",
+    "main.js": "./static/js/main.679b72ec.js",
+    "static/js/787.f059a597.chunk.js": "./static/js/787.f059a597.chunk.js",
+    "static/media/revicons.eot": "./static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "./static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "./static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "./index.html",
+    "main.2b2387d0.css.map": "./static/css/main.2b2387d0.css.map",
+    "main.679b72ec.js.map": "./static/js/main.679b72ec.js.map",
+    "787.f059a597.chunk.js.map": "./static/js/787.f059a597.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ca4597e.css",
-    "static/js/main.2d7cf079.js"
+    "static/css/main.2b2387d0.css",
+    "static/js/main.679b72ec.js"
   ]
 }
