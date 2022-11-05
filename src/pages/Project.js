@@ -3,8 +3,6 @@ import { useLocation } from 'react-router-dom';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './project.module.css';
-import Caro1 from '../components/Caro1';
-import Caro2 from '../components/Caro2';
 import Sugg1 from '../components/Sugg1';
 import Sugg2 from '../components/Sugg2';
 import Navbar from '../components/Navbar';
@@ -67,52 +65,52 @@ function Project(props) {
                 >
 
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img1} />
+                        <img className={styles.img1} src={img1} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img2} />
+                        <img className={styles.img1} src={img2} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img3} />
+                        <img className={styles.img1} src={img3} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img4} />
+                        <img className={styles.img1} src={img4} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img5} />
+                        <img className={styles.img1} src={img5} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img6} />
+                        <img className={styles.img1} src={img6} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img7} />
+                        <img className={styles.img1} src={img7} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img8} />
+                        <img className={styles.img1} src={img8} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img9} />
+                        <img className={styles.img1} src={img9} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img10} />
+                        <img className={styles.img1} src={img10} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img11} />
+                        <img className={styles.img1} src={img11} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img12} />
+                        <img className={styles.img1} src={img12} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img13} />
+                        <img className={styles.img1} src={img13} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img14} />
+                        <img className={styles.img1} src={img14} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img15} />
+                        <img className={styles.img1} src={img15} alt='img' />
                     </div>
                     <div className={styles.pimg} >
-                        <img className={styles.img1} src={img16} />
+                        <img className={styles.img1} src={img16} alt='img' />
                     </div>
 
 

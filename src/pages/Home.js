@@ -456,11 +456,11 @@ function Home(props) {
 
             <div className={styles.walkv}>
                 <div className={styles.walkCol}>
-                    <img className={styles.walkCard} src='./../images/v1.png'></img>
+                    <img className={styles.walkCard} src='./../images/v1.png' alt='img'></img>
 
                 </div>
                 <div className={styles.walkCol}>
-                    <img className={styles.walkCard} src='./../images/v1.png'></img>
+                    <img className={styles.walkCard} src='./../images/v1.png' alt='img'></img>
 
                 </div>
 
