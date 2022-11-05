@@ -146,23 +146,25 @@ function Home(props) {
                     draggable={false}
                     showDots={true}
                     responsive={responsive}
-                    ssr={true}
+                    ssr={false}
                     infinite={true}
                     autoPlay={props.deviceType !== "mobile" ? true : false}
-                    autoPlaySpeed={1500}
+                    autoPlaySpeed={4000}
                     keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
+                    // customTransition="all 2"
+                    transitionDuration={1000}
                     containerClass="carousel-container"
                     // removeArrowOnDeviceType={["tablet", "mobile"]}
-                    // deviceType={this.props.deviceType}
+                    deviceType={props.deviceType}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
+
                 >
 
-                    <img className={styles.homeCaro} src='./../images/a.jpg' />
-                    <img className={styles.homeCaro} src='./../images/b.jpg' />
-                    <img className={styles.homeCaro} src='./../images/c.jpg' />
+                    <img className={styles.homeCaro} src='./../images/a.webp' />
+                    <img className={styles.homeCaro} src='./../images/b.webp' />
+                    <img className={styles.homeCaro} src='./../images/c.webp' />
+                    <img className={styles.homeCaro} src='./../images/d.webp' />
 
                 </Carousel >
             </div>
@@ -454,11 +456,11 @@ function Home(props) {
 
             <div className={styles.walkv}>
                 <div className={styles.walkCol}>
-                    <img className={styles.walkCard} src='./../images/a.jpg'></img>
+                    <img className={styles.walkCard} src='./../images/v1.png'></img>
 
                 </div>
                 <div className={styles.walkCol}>
-                    <img className={styles.walkCard} src='./../images/a.jpg'></img>
+                    <img className={styles.walkCard} src='./../images/v1.png'></img>
 
                 </div>
 

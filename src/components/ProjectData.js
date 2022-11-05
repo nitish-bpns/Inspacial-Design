@@ -4,7 +4,7 @@ export const ProjectData = [
     {
         no: 1,
         title: `Nalini's`,
-        path: 'dashboard',
+        path: '/projects',
         img: ['./../images/P1/1.jpg', './../images/P1/2.jpg', './../images/P1/3.jpg', './../images/P1/4.jpg', './../images/P1/5.jpg', './../images/P1/6.jpg', './../images/P1/7.jpg', './../images/P1/8.jpg', './../images/P1/9.jpg', './../images/P1/10.jpg', './../images/P1/11.jpg', './../images/P1/12.jpg', './../images/P1/13.jpg', './../images/P1/14.jpg', './../images/P1/15.jpg', './../images/P1/16.jpg'],
         owner: 'Nalini',
         sdate: '111',
@@ -20,7 +20,7 @@ export const ProjectData = [
     {
         no: 2,
         title: `Vamsi's`,
-        path: 'dashboard',
+        path: '/projects',
         img: ['./../images/P2/1.jpg', './../images/P2/2.jpg', './../images/P2/3.jpg', './../images/P2/4.jpg', './../images/P2/5.jpg', './../images/P2/6.jpg', './../images/P2/7.jpg', './../images/P2/8.jpg', './../images/P2/9.jpg', './../images/P2/10.jpg', './../images/P2/11.jpg', './../images/P2/12.jpg', './../images/P2/13.jpg', './../images/P2/14.jpg', './../images/P2/15.jpg', './../images/P2/16.jpg'],
         owner: 'Vamsi',
         sdate: '222',

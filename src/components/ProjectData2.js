@@ -4,7 +4,7 @@ export const ProjectData2 = [
     {
         no: 4,
         title: `Venkatramana's`,
-        path: 'dashboard',
+        path: '/projects/4',
         img: ['./../images/P4/1.jpg', './../images/P4/2.jpg', './../images/P4/3.jpg', './../images/P4/4.jpg', './../images/P4/5.jpg', './../images/P4/6.jpg', './../images/P4/7.jpg', './../images/P4/8.jpg', './../images/P4/9.jpg', './../images/P4/10.jpg', './../images/P4/11.jpg', './../images/P4/12.jpg', './../images/P4/13.jpg', './../images/P4/14.jpg', './../images/P4/15.jpg', './../images/P4/16.jpg'],
         owner: 'Venkatraman',
         sdate: '444',

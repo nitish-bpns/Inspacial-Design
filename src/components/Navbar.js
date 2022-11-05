@@ -39,7 +39,7 @@ function Navbar() {
                     </li>
                 </HashLink>
 
-                {(toggleMenu || screenWidth > 500) && (
+                {(toggleMenu || screenWidth > 1000) && (
                     <>
                         <HashLink
                             scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}

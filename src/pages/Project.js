@@ -51,16 +51,16 @@ function Project(props) {
                     draggable={false}
                     showDots={false}
                     responsive={responsive}
-                    ssr={true}
+                    ssr={false}
                     infinite={true}
                     autoPlay={props.deviceType !== "mobile" ? true : false}
-                    autoPlaySpeed={1000}
+                    autoPlaySpeed={2500}
                     keyBoardControl={true}
-                    customTransition="all .5"
+                    // customTransition="all .5"
                     transitionDuration={500}
                     containerClass="carousel-container"
                     // removeArrowOnDeviceType={["tablet", "mobile"]}
-                    // deviceType={this.props.deviceType}
+                    deviceType={props.deviceType}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                     height='10rem'

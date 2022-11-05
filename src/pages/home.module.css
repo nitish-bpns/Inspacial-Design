@@ -296,6 +296,92 @@
 
 
 
+@media screen and (max-width: 1100px) {
+
+    .gall1 {
+        width: 90%;
+    }
+
+    .readBtn {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 5% 0 5%;
+        justify-content: center;
+    }
+
+    .btn1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        background: #FBABAB;
+        border-radius: 20px;
+        width: 94%;
+        padding: 3px 0 3px 0;
+    }
+
+    .caroText {
+        background-color: black;
+        opacity: 0.6;
+        width: 28%;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 1px #000000;
+        padding: 3%;
+        position: absolute;
+        top: 12rem;
+        left: 15%;
+        animation-name: home_example2__2-0Ws;
+        /* animation-delay: 1s; */
+        animation-duration: 3s;
+        /* animation-fill-mode: forwards; */
+    }
+
+    .divGall {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+
+    .walkCard {
+        margin: 1%;
+        padding: 1%;
+        width: 98%;
+        height: 14rem;
+    }
+
+    .states1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3% 5% 3% 5%;
+    }
+
+    .count {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 94px;
+        text-align: center;
+    }
+
+    .countDes {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 28px;
+        /* identical to box height */
+        text-align: center;
+        color: #727272;
+    }
+
+
+
+
+
+}
+
+
+
+
 @media screen and (max-width: 500px) {
     .homePage {
         margin-top: 16%;
