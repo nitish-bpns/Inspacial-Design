@@ -8,11 +8,11 @@ import { ScrollToTop } from 'react-router-scroll-to-top';
 
 function App() {
   return (
-    <Router basename='/index.html' >
+    <Router>
       <ScrollToTop />
       <Routes>
 
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' exact element={<Home />}></Route>
         <Route path='/projects' element={<Project />}></Route>
 
 

@@ -17,7 +17,7 @@ function Sugg1() {
 
                     <Link
                         className={styles.suggItem}
-                        to={`/projects/${index + 1}`}
+                        to={item.path}
                         state={{
                             itemTitle: item.title,
                             img1: item.img[0],

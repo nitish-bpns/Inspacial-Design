@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const ProjectData = [
     {
         no: 1,
@@ -36,7 +34,7 @@ export const ProjectData = [
     {
         no: 3,
         title: `Venkatesh Gowd's`,
-        path: 'dashboard',
+        path: '/projects',
         img: ['./../images/P3/1.jpg', './../images/P3/2.jpg', './../images/P3/3.jpg', './../images/P3/4.jpg', './../images/P3/5.jpg', './../images/P3/6.jpg', './../images/P3/7.jpg', './../images/P3/8.jpg', './../images/P3/9.jpg', './../images/P3/10.jpg', './../images/P3/11.jpg', './../images/P3/12.jpg', './../images/P3/13.jpg', './../images/P3/14.jpg', './../images/P3/15.jpg', './../images/P3/16.jpg'],
         owner: 'Venkatesh Gowd',
         sdate: '333',

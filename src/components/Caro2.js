@@ -52,7 +52,8 @@ function Caro2(props) {
                     return (
 
                         <div>
-                            <Link to={`/projects/${index + 1}`}
+                            <Link
+                                to={item.path}
                                 state={{
                                     itemTitle: item.title,
                                     img1: item.img[0],
